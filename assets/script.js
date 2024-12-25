@@ -106,7 +106,7 @@ async function updateWeatherInfo(city) {
     windValue.textContent = speed + ' M/s'
     currentDate.textContent = getCurrentDate()
 
-    weatherImg.src = `C:/Users/HP/OneDrive - UTHM/Desktop/VisualCode/WheatherApp/assets/weather/${getWeatherIcon(id)}`
+    weatherImg.src = `weather/${getWeatherIcon(id)}`
 
     await updateForecastsInfo(city)
     showDisplaySection(weatherInfo)
@@ -146,7 +146,7 @@ function updateForecastsItems(weatherData){
     const forecastItem =`
         <div class="forecast-items">
             <h5 class="forecast-item-date regular-txt">${dateResult}</h5>
-            <img src="C:/Users/HP/OneDrive - UTHM/Desktop/VisualCode/WheatherApp/assets/weather/${getWeatherIcon(id)}" alt="" class="forecast-item-img">
+            <img src="weather/${getWeatherIcon(id)}" alt="" class="forecast-item-img">
             <h5 class="forecast-item-temp">${Math.round(temp) + '°C'}</h5>
         </div>
     `
