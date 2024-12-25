@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Wheather Application</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <!--IMPORT GOOGLE ICONS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <audio id="background-audio" autoplay loop muted>
+            <source src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\backgroundsong\summer-memories-270159.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <main class="main-container">
+            <!-- <button id="mute-button"><img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\backgroundsong\no-audio-unscreen.gif" alt="" class="mutebtn"></button> -->
+            <header class="input-container">
+                <input class="city-input" placeholder="Search City" type="text" >
+                <button class="search-btn">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </header>
+
+            <section class="weather-info" style="display: none">
+                <div class="location-date-container">
+                    <div class="location">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <h4 class="country-txt">Kedah</h4>
+                    </div>
+                    <h5 class="current-date-txt regular-txt">Sun, 27 Oct</h5>
+                </div>
+
+                <div class ="weather-summary-container">
+                    <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\clouds.svg" alt="" class="weather-summary-img">
+                    <div class="weather-summary-info">
+                        <h1 class="temp-txt">21 °C</h1>
+                        <h3 class="condition-txt regular-txt">Clouds</h3>
+                    </div>
+                </div>
+
+                <div class="weather-conditions-container">
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            water_drop
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="regular-txt">Humidity</h5>
+                            <h5 class="humidity-value-txt">55%</h5>
+                        </div>
+                    </div>
+
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="regular-txt">Wind Speed</h5>
+                            <h5 class="wind-value-txt">2 M/s</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-items-container">
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                    <div class="forecast-items">
+                        <h5 class="forecast-item-date regular-txt">24 Dec</h5>
+                        <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\weather\thunderstorm.svg" alt="" class="forecast-item-img">
+                        <h5 class="forecast-item-temp">21 °C</h5>
+                    </div>
+                </div>
+          
+            </section>
+
+            <section class="search-city section-message">
+                <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\message\location-unscreen.gif">
+                 <div>
+                    <h1>Search City</h1>
+                        <h4 class="regular-txt">
+                            Find out the weather conditions for the city
+                        </h4>
+                 </div>
+            </section>
+
+            <section class="not-found section-message" style="display: none">
+                <img src="C:\Users\HP\OneDrive - UTHM\Desktop\VisualCode\WheatherApp\assets\message\Not-found-unscreen.gif">
+                 <div>
+                    <h1>Not Found</h1>
+                        <h4 class="regular-txt">
+                            Please try again or find another city
+                        </h4>
+                 </div>
+            </section>
+        </main>
+    </body>
+</html>
